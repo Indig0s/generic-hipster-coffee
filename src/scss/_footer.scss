@@ -1,0 +1,48 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 30%;
+    height: 20%;
+    background-color: $footer_background;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    color: $bluelink;
+}
+
+.links-link {
+    text-decoration: none;
+    color: $bluelink;
+    text-decoration: underline;
+
+    &_current {
+        color: $greytext;
+        text-decoration: none;
+    }
+
+}
+
+
+.hashtag {
+    margin-top: 15%;
+    text-align: center;
+    font-weight: bold;
+    color: $greytext;
+    letter-spacing: 1.3px;
+
+}
+
+.socials {
+    text-align: center;
+    padding-bottom: 20%;
+    color: $greytext;
+
+    a {
+        color: $bluelink;
+    }
+}
