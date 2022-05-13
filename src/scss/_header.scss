@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: center;
     background-color: $header_background;
+    padding-bottom: .5em;
 
     &__logo {
         width: 30vw;
@@ -14,12 +15,11 @@
         flex-direction: row;
         justify-content: space-evenly;
         padding-bottom: 1em;
-        width: 60vw;
+        width: 80vw;
 
         &-item {
             width: 25%;
             text-align: center;
-            margin-bottom: 1em;
             text-decoration: none;
             color: $greytext;
 
@@ -30,6 +30,24 @@
             &_current {
                 color: black;
             }
+        }
+    }
+}
+
+@media (min-width:768px) {
+    .header {
+        padding: 0 6em;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        &__logo {
+            width: 10vw;
+        }
+
+        &__nav {
+            width: 30vw;
+            padding: 0;
         }
     }
 }
