@@ -1,0 +1,43 @@
+section {
+  margin-left: 2em;
+
+  h1 {
+    font-family: "Roboto Condensed", Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: $h1size;
+    letter-spacing: 0.0675em;
+  }
+
+  img {
+    width: 60em;
+  }
+}
+
+.main-info {
+  display: flex;
+  flex-direction: row;
+
+  div {
+    padding-right: 8em;
+  }
+
+  h3 {
+    font-family: "Roboto Condensed", Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: $h3size;
+  }
+
+  p {
+    font-family: "Roboto Condensed", Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: $textsize;
+  }
+}
+
+.location {
+  margin-left: 2em;
+
+  img {
+    width: 60em;
+  }
+}
