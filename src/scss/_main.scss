@@ -1,4 +1,14 @@
+<<<<<<< HEAD
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section {
+=======
 .section {
+>>>>>>> main
   margin-left: 2em;
 
   h1 {
@@ -46,5 +56,25 @@
 
   img {
     width: 60em;
+    margin-bottom: -2em;
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    .section {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+  }
+  .main-info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
 }
