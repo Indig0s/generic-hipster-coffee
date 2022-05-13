@@ -1,0 +1,35 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $header_background;
+
+    &__logo {
+        width: 30vw;
+        margin: 1em 0;
+    }
+
+    &__nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-bottom: 1em;
+        width: 60vw;
+
+        &-item {
+            width: 25%;
+            text-align: center;
+            margin-bottom: 1em;
+            text-decoration: none;
+            color: $greytext;
+
+            &:hover {
+                color: black;
+            }
+
+            &_current {
+                color: black;
+            }
+        }
+    }
+}
