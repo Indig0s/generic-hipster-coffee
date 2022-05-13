@@ -1,14 +1,14 @@
-main {
+.main {
   display: flex;
   flex-direction: column;
 }
 
-section p {
+.section p {
   line-height: 2em;
   max-width: 60em;
 }
 
-section img {
+.section img {
   width: 60em;
 }
 
