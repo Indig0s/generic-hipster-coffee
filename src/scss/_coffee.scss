@@ -1,88 +1,81 @@
 .container__heading {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
 }
 
 .heading__main {
-    letter-spacing: 0.675em;
+  letter-spacing: 0.675em;
 
-    h1 {
-        font-weight: lighter;
-        font-size: $h1size;
-    }
+  h1 {
+    font-weight: lighter;
+    font-size: $h1size;
+  }
 }
 
 .heading__paragraph {
-    p {
-        font-weight: lighter;
+  p {
+    font-weight: lighter;
 
-        &:last-child {
-            font-size: 0.7em;
-        }
+    &:last-child {
+      font-size: 0.7em;
     }
+  }
 }
 
 .container__prod {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .prod {
-    display: flex;
-    flex-direction: column;
-    justify-items: space-between;
-    background-color: $header_background;
-    margin-top: 3%;
-    margin-bottom: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-items: space-between;
+  background-color: $header_background;
+  margin-top: 3%;
+  margin-bottom: 3%;
 
+  .prod__heading {
+    padding-left: 5%;
+    padding: 3%;
+    margin-bottom: 0;
+    margin-top: 0;
+    height: 15%;
+    font-weight: lighter;
+    border-bottom: 1px solid $greytext;
+  }
 
-    .prod__heading {
-        padding-left: 5%;
-        padding: 3%;
-        margin-bottom: 0;
-        margin-top: 0;
-        height: 15%;
-        font-weight: lighter;
-        border-bottom: 1px solid $greytext;
-    }
+  .prod__img {
+    width: 100%;
+  }
 
-    .prod__img {
-        width: 100%;
+  .prod__text__top {
+    font-style: italic;
+    padding-left: 5%;
+  }
 
-    }
-
-    .prod__text__top {
-        font-style: italic;
-        padding-left: 5%;
-    }
-
-    .prod__text__bot {
-        padding-left: 5%;
-        padding-right: 3.2%;
-        padding-bottom: 2%;
-
-    }
+  .prod__text__bot {
+    padding-left: 5%;
+    padding-right: 3.2%;
+    padding-bottom: 2%;
+  }
 }
 
 @media (min-width: 768px) {
+  .container__prod {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 
-
-    .container__prod {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-
-    .prod {
-        width: 45%;
-        height: 40%;
-        border: 1px solid white;
-        margin-bottom: 1%;
-        margin-top: 1%;
-    }
-
-
+  .prod {
+    width: 45%;
+    height: 40%;
+    border: 1px solid white;
+    margin-bottom: 1%;
+    margin-top: 1%;
+  }
 }
